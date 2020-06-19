@@ -1,5 +1,4 @@
-[![Travis](https://api.travis-ci.org/kwikteam/npy-matlab.svg?branch=master "Travis")](https://travis-ci.org/kwikteam/npy-matlab)
-# npy-matlab
+# npy_matlab
 
 Code to read and write NumPy's NPY format (`.npy` files) in MATLAB.
 
@@ -17,16 +16,12 @@ state of this project!
 For the complete specification of the NPY format, see the [NumPy documentation](https://www.numpy.org/devdocs/reference/generated/numpy.lib.format.html).
 
 ## Installation
-After downloading npy-matlab as a zip file or via git, just add the
-npy-matlab directory to your search path:
-
-```matlab
->> addpath('my-idiosyncratic-path/npy-matlab/npy-matlab')  
->> savepath
-```
+After downloading npy_matlab as a zip file or via git, just add the
+npy_matlab directory to your MATLAB path:
 
 ## Usage example
 ```matlab
+>> import npy_matlab.*
 >> a = rand(5,4,3);
 >> writeNPY(a, 'a.npy');
 >> b = readNPY('a.npy');
